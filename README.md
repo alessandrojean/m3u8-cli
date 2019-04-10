@@ -32,7 +32,8 @@ USAGE
 * [`m3u8-cli find`](#m3u8-cli-find)
 * [`m3u8-cli hello`](#m3u8-cli-hello)
 * [`m3u8-cli help [COMMAND]`](#m3u8-cli-help-command)
-* [`m3u8-cli update`](#m3u8-cli-update)
+* [`m3u8-cli remove`](#m3u8-cli-remove)
+* [`m3u8-cli update ID`](#m3u8-cli-update-id)
 
 ## `m3u8-cli create`
 
@@ -95,13 +96,13 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `m3u8-cli update`
+## `m3u8-cli remove`
 
 Describe the command here
 
 ```
 USAGE
-  $ m3u8-cli update
+  $ m3u8-cli remove
 
 OPTIONS
   -n, --name=name  name to print
@@ -109,6 +110,20 @@ OPTIONS
 DESCRIPTION
   ...
   Extra documentation goes here
+```
+
+_See code: [src/commands/remove.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/remove.js)_
+
+## `m3u8-cli update ID`
+
+Update an existing channel in the database
+
+```
+USAGE
+  $ m3u8-cli update ID
+
+ARGUMENTS
+  ID  id of the channel
 ```
 
 _See code: [src/commands/update.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/update.js)_
