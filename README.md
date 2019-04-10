@@ -32,6 +32,7 @@ USAGE
 * [`m3u8-cli find`](#m3u8-cli-find)
 * [`m3u8-cli hello`](#m3u8-cli-hello)
 * [`m3u8-cli help [COMMAND]`](#m3u8-cli-help-command)
+* [`m3u8-cli update`](#m3u8-cli-update)
 
 ## `m3u8-cli create`
 
@@ -46,18 +47,15 @@ _See code: [src/commands/create.js](https://github.com/alessandrojean/m3u8-cli/b
 
 ## `m3u8-cli find`
 
-Describe the command here
+Find a channel with the id or name specified
 
 ```
 USAGE
   $ m3u8-cli find
 
 OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+  -i, --id=id      id to search
+  -n, --name=name  name to search
 ```
 
 _See code: [src/commands/find.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/find.js)_
@@ -96,4 +94,22 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
+
+## `m3u8-cli update`
+
+Describe the command here
+
+```
+USAGE
+  $ m3u8-cli update
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/update.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/update.js)_
 <!-- commandsstop -->
