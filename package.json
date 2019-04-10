@@ -10,7 +10,12 @@
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
-    "@oclif/plugin-help": "^2"
+    "@oclif/plugin-help": "^2",
+    "countries-list": "^2.4.2",
+    "inquirer": "^6.2.2",
+    "ora": "^3.4.0",
+    "sequelize": "^5.3.0",
+    "sqlite3": "^4.0.6"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
