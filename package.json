@@ -12,6 +12,7 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "axios": "^0.18.0",
+    "cli-ux": "^5.2.1",
     "countries-list": "^2.4.2",
     "inquirer": "^6.2.2",
     "ora": "^3.4.0",

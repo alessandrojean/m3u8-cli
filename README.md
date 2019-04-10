@@ -31,9 +31,10 @@ USAGE
 * [`m3u8-cli create`](#m3u8-cli-create)
 * [`m3u8-cli export`](#m3u8-cli-export)
 * [`m3u8-cli find`](#m3u8-cli-find)
-* [`m3u8-cli hello`](#m3u8-cli-hello)
 * [`m3u8-cli help [COMMAND]`](#m3u8-cli-help-command)
-* [`m3u8-cli import`](#m3u8-cli-import)
+* [`m3u8-cli import FILE`](#m3u8-cli-import-file)
+* [`m3u8-cli list`](#m3u8-cli-list)
+* [`m3u8-cli list:standard TERM`](#m3u8-cli-liststandard-term)
 * [`m3u8-cli remove`](#m3u8-cli-remove)
 * [`m3u8-cli test`](#m3u8-cli-test)
 * [`m3u8-cli update ID`](#m3u8-cli-update-id)
@@ -78,24 +79,6 @@ OPTIONS
 
 _See code: [src/commands/find.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/find.js)_
 
-## `m3u8-cli hello`
-
-Describe the command here
-
-```
-USAGE
-  $ m3u8-cli hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/hello.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/hello.js)_
-
 ## `m3u8-cli help [COMMAND]`
 
 display help for m3u8-cli
@@ -113,13 +96,27 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `m3u8-cli import`
+## `m3u8-cli import FILE`
+
+Import an existing playlist
+
+```
+USAGE
+  $ m3u8-cli import FILE
+
+ARGUMENTS
+  FILE  m3u8 playlist to import
+```
+
+_See code: [src/commands/import.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/import.js)_
+
+## `m3u8-cli list`
 
 Describe the command here
 
 ```
 USAGE
-  $ m3u8-cli import
+  $ m3u8-cli list
 
 OPTIONS
   -n, --name=name  name to print
@@ -129,7 +126,21 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/import.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/import.js)_
+_See code: [src/commands/list/index.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/list/index.js)_
+
+## `m3u8-cli list:standard TERM`
+
+Search in the standard SS IPTV channels
+
+```
+USAGE
+  $ m3u8-cli list:standard TERM
+
+ARGUMENTS
+  TERM  term to filter
+```
+
+_See code: [src/commands/list/standard.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/list/standard.js)_
 
 ## `m3u8-cli remove`
 
