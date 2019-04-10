@@ -33,6 +33,7 @@ USAGE
 * [`m3u8-cli find`](#m3u8-cli-find)
 * [`m3u8-cli hello`](#m3u8-cli-hello)
 * [`m3u8-cli help [COMMAND]`](#m3u8-cli-help-command)
+* [`m3u8-cli import`](#m3u8-cli-import)
 * [`m3u8-cli remove`](#m3u8-cli-remove)
 * [`m3u8-cli test`](#m3u8-cli-test)
 * [`m3u8-cli update ID`](#m3u8-cli-update-id)
@@ -112,6 +113,24 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
+## `m3u8-cli import`
+
+Describe the command here
+
+```
+USAGE
+  $ m3u8-cli import
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/import.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/import.js)_
+
 ## `m3u8-cli remove`
 
 Remove a channel from the database if exists
@@ -136,7 +155,9 @@ USAGE
   $ m3u8-cli test
 
 OPTIONS
-  -n, --name=name  name to print
+  -c, --channel    test specific
+  -i, --id=id      id to remove
+  -n, --name=name  name to remove
 
 DESCRIPTION
   ...
