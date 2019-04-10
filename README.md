@@ -29,6 +29,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`m3u8-cli create`](#m3u8-cli-create)
+* [`m3u8-cli export`](#m3u8-cli-export)
 * [`m3u8-cli find`](#m3u8-cli-find)
 * [`m3u8-cli hello`](#m3u8-cli-hello)
 * [`m3u8-cli help [COMMAND]`](#m3u8-cli-help-command)
@@ -45,6 +46,24 @@ USAGE
 ```
 
 _See code: [src/commands/create.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/create.js)_
+
+## `m3u8-cli export`
+
+Describe the command here
+
+```
+USAGE
+  $ m3u8-cli export
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/export.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/export.js)_
 
 ## `m3u8-cli find`
 
@@ -98,18 +117,15 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6
 
 ## `m3u8-cli remove`
 
-Describe the command here
+Remove a channel from the database if exists
 
 ```
 USAGE
   $ m3u8-cli remove
 
 OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+  -i, --id=id      id to remove
+  -n, --name=name  name to remove
 ```
 
 _See code: [src/commands/remove.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/remove.js)_
