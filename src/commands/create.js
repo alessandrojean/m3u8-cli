@@ -1,20 +1,16 @@
 const {Command, flags} = require('@oclif/command')
+const inquirer = require('inquirer')
+const {Channel} = require('../models')
+const {questions} = require('../questions')
 
 class CreateCommand extends Command {
   async run() {
-    const {flags} = this.parse(CreateCommand)
-    const name = flags.name || 'world'
-    this.log(`hello ${name} from /home/alessandro/Documentos/m3u8-cli/src/commands/create.js`)
+    const answers = await inquirer.prompt(questions)
+    const channel = await Channel.create(answers)
+    this.log(`Channel ${channel.name} created with id ${channel.id}.`)
   }
 }
 
-CreateCommand.description = `Describe the command here
-...
-Extra documentation goes here
-`
-
-CreateCommand.flags = {
-  name: flags.string({char: 'n', description: 'name to print'}),
-}
+CreateCommand.description = `Creates a new channel in the database`
 
 module.exports = CreateCommand
