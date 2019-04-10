@@ -34,6 +34,7 @@ USAGE
 * [`m3u8-cli hello`](#m3u8-cli-hello)
 * [`m3u8-cli help [COMMAND]`](#m3u8-cli-help-command)
 * [`m3u8-cli remove`](#m3u8-cli-remove)
+* [`m3u8-cli test`](#m3u8-cli-test)
 * [`m3u8-cli update ID`](#m3u8-cli-update-id)
 
 ## `m3u8-cli create`
@@ -49,18 +50,14 @@ _See code: [src/commands/create.js](https://github.com/alessandrojean/m3u8-cli/b
 
 ## `m3u8-cli export`
 
-Describe the command here
+Export the database channels to a M3U8 file.
 
 ```
 USAGE
   $ m3u8-cli export
 
 OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+  -o, --output=output  non-default output file
 ```
 
 _See code: [src/commands/export.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/export.js)_
@@ -129,6 +126,24 @@ OPTIONS
 ```
 
 _See code: [src/commands/remove.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/remove.js)_
+
+## `m3u8-cli test`
+
+Describe the command here
+
+```
+USAGE
+  $ m3u8-cli test
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/test.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/test.js)_
 
 ## `m3u8-cli update ID`
 
