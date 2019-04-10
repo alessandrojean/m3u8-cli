@@ -29,16 +29,28 @@ USAGE
 # Commands
 <!-- commands -->
 * [`m3u8-cli create`](#m3u8-cli-create)
+* [`m3u8-cli find`](#m3u8-cli-find)
 * [`m3u8-cli hello`](#m3u8-cli-hello)
 * [`m3u8-cli help [COMMAND]`](#m3u8-cli-help-command)
 
 ## `m3u8-cli create`
 
-Describe the command here
+Creates a new channel in the database
 
 ```
 USAGE
   $ m3u8-cli create
+```
+
+_See code: [src/commands/create.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/create.js)_
+
+## `m3u8-cli find`
+
+Describe the command here
+
+```
+USAGE
+  $ m3u8-cli find
 
 OPTIONS
   -n, --name=name  name to print
@@ -48,7 +60,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/create.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/create.js)_
+_See code: [src/commands/find.js](https://github.com/alessandrojean/m3u8-cli/blob/v1.0.0/src/commands/find.js)_
 
 ## `m3u8-cli hello`
 
