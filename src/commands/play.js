@@ -1,6 +1,6 @@
 const {Command, flags} = require('@oclif/command')
 const {promisify} = require('util')
-const {exec} = require('child_process')
+const {exec, spawn} = require('child_process')
 const {Channel, Sequelize} = require('../models')
 
 const execPromise = promisify(exec)
@@ -26,8 +26,15 @@ class PlayCommand extends Command {
     const result = await Channel.findOne({raw: true, where})
     if (result) {
       const {streamUrl, aspectRatio} = result
-      const size = aspectRatio === '16:9' ? '-x 1280 -y 720' : '-x 1280 -y 960'
-      await execPromise(`ffplay ${size} "${streamUrl}"`)
+      const size = aspectRatio === '16:9' ?
+        ['-x', '1280', '-y', '720'] :
+        ['-x', '1280', '-y', '960']
+
+      const args = [...size, streamUrl]
+      const options = {detached: true, stdio: 'ignore'}
+
+      this.log('Running ffplay in background.')
+      spawn('ffplay', args, options).unref()
     } else {
       this.error('No channel found.')
     }
