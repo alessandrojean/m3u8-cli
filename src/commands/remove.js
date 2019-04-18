@@ -12,31 +12,31 @@ class RemoveCommand extends Command {
       return
     }
 
-    let where;
+    let where
     if (id === -1) {
-      where = { name: { [Sequelize.Op.like]: [`%${name}%`] } }
+      where = {name: {[Sequelize.Op.like]: [`%${name}%`]}}
     } else {
-      where = { id: parseInt(id) }
+      where = {id: parseInt(id, 10)}
     }
 
-    await Channel.destroy({ where })
-    this.log(`Channel removed.`)
+    await Channel.destroy({where})
+    this.log('Channel removed.')
   }
 }
 
-RemoveCommand.description = `Remove a channel from the database if exists`
+RemoveCommand.description = 'Remove a channel from the database if exists'
 
 RemoveCommand.flags = {
   id: flags.string({
     char: 'i',
     description: 'id to remove',
-    exclusive: ['name']
+    exclusive: ['name'],
   }),
   name: flags.string({
     char: 'n',
     description: 'name to remove',
-    exclusive: ['id']
-  })
+    exclusive: ['id'],
+  }),
 }
 
 module.exports = RemoveCommand

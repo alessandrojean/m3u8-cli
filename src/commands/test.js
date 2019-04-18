@@ -8,7 +8,7 @@ class TestCommand extends Command {
     const {flags} = this.parse(TestCommand)
     const specific = flags.channel
 
-    let channels;
+    let channels
     if (specific) {
       const name = flags.name || ''
       const id = flags.id || -1
@@ -18,22 +18,22 @@ class TestCommand extends Command {
         return
       }
 
-      let where;
+      let where
       if (id === -1) {
-        where = { name: { [Sequelize.Op.like]: [`%${name}%`] } }
+        where = {name: {[Sequelize.Op.like]: [`%${name}%`]}}
       } else {
-        where = { id: parseInt(id) }
+        where = {id: parseInt(id, 10)}
       }
 
       channels = [await Channel.findOne({
         attributes: ['id', 'name', 'streamUrl'],
         where,
-        raw: true
+        raw: true,
       })]
     } else {
       channels = await Channel.findAll({
         attributes: ['id', 'name', 'streamUrl'],
-        raw: true
+        raw: true,
       })
     }
 
@@ -41,24 +41,23 @@ class TestCommand extends Command {
 
     let withError = await Promise.all(
       channels.map(({id, name, streamUrl}) => {
-        return new Promise(async (resolve, reject) => {
-          try {
-            await axios.get(streamUrl, { timeout: 10000 });
-            resolve();
-          } catch (error) {
-            const message = error.response 
-              ? 'Status ' + error.response.status
-              : error.message;
-  
-            resolve({ id, name, error: message });
-          }
-        });
+        return new Promise((resolve, _) => {
+          axios.get(streamUrl, {timeout: 10000})
+            .then(_ => resolve())
+            .catch(error => {
+              const message = error.response ?
+                'Status ' + error.response.status :
+                error.message
+
+              resolve({id, name, error: message})
+            })
+        })
       })
-    );
+    )
 
     spinner.stop()
 
-    withError = withError.filter(x => x);
+    withError = withError.filter(x => x)
 
     if (withError.length === 0) {
       this.log('All the channels are working.')
@@ -70,29 +69,26 @@ class TestCommand extends Command {
   }
 }
 
-TestCommand.description = `Describe the command here
-...
-Extra documentation goes here
-`
+TestCommand.description = 'Test the stream URLs.'
 
 TestCommand.flags = {
   channel: flags.boolean({
-    char: 'c', 
-    description: 'test specific', 
-    default: false
+    char: 'c',
+    description: 'test specific',
+    default: false,
   }),
   id: flags.string({
     char: 'i',
     description: 'id to remove',
     exclusive: ['name'],
-    dependsOn: ['channel']
+    dependsOn: ['channel'],
   }),
   name: flags.string({
     char: 'n',
     description: 'name to remove',
     exclusive: ['id'],
-    dependsOn: ['channel']
-  })
+    dependsOn: ['channel'],
+  }),
 }
 
 module.exports = TestCommand

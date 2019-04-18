@@ -1,4 +1,4 @@
-const {Command, flags} = require('@oclif/command')
+const {Command} = require('@oclif/command')
 const axios = require('axios')
 const {cli} = require('cli-ux')
 
@@ -10,12 +10,12 @@ class StandardCommand extends Command {
     const {term} = args
 
     const {data} = await axios.get(API)
-    const channels = data.filter(({title}) => title.match(new RegExp(term, 'i')) ? true : false)
+    const channels = data.filter(({title}) => title.match(new RegExp(term, 'i')))
 
     if (channels.length > 0) {
       cli.table(channels, {
         id: {},
-        title: { header: 'Name' }
+        title: {header: 'Name'},
       })
     } else {
       this.log('No results')
@@ -23,10 +23,10 @@ class StandardCommand extends Command {
   }
 }
 
-StandardCommand.description = `Search in the standard SS IPTV channels`
+StandardCommand.description = 'Search in the standard SS IPTV channels'
 
 StandardCommand.args = [
-  { name: 'term', required: true, description: 'term to filter'}
+  {name: 'term', required: true, description: 'term to filter'},
 ]
 
 module.exports = StandardCommand

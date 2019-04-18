@@ -1,4 +1,4 @@
-const {Command, flags} = require('@oclif/command')
+const {Command} = require('@oclif/command')
 const inquirer = require('inquirer')
 const {Channel} = require('../models')
 const {questions} = require('../questions')
@@ -11,6 +11,6 @@ class CreateCommand extends Command {
   }
 }
 
-CreateCommand.description = `Creates a new channel in the database`
+CreateCommand.description = 'Creates a new channel in the database'
 
 module.exports = CreateCommand

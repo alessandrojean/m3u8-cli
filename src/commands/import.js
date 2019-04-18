@@ -1,4 +1,4 @@
-const {Command, flags} = require('@oclif/command')
+const {Command} = require('@oclif/command')
 const {promisify} = require('util')
 const path = require('path')
 const {readFile} = require('fs')
@@ -6,16 +6,12 @@ const {Channel} = require('../models')
 
 const readFilePromise = promisify(readFile)
 
-const TOKEN_REGEX = /(.*)=\"(.*)\"/
+const TOKEN_REGEX = /(.*)="(.*)"/
 const COLOR_REGEX = /^#EXTBG: (.*)$/
 const URL_REGEX = /^https?/
 
-const toCamelCase = (string) => {
-  return string.replace(/([-_][a-z])/ig, s => {
-    return s.toUpperCase()
-        .replace('-', '')
-        .replace('_', '')
-  })
+const toCamelCase = string => {
+  return string.replace(/([-_][a-z])/ig, s => s.toUpperCase().replace(/-|_/, ''))
 }
 
 class ImportCommand extends Command {
@@ -24,8 +20,9 @@ class ImportCommand extends Command {
     const file = path.join(process.cwd(), args.file)
 
     const fileContent = await readFilePromise(file, 'utf8')
-    const groups = fileContent.split('\n\n')
-        .filter(lines => lines.match(/^#EXTINF:-1/))
+    const groups = fileContent
+      .split('\n\n')
+      .filter(lines => lines.startsWith(/^#EXTINF:-1/))
 
     for (let group of groups) {
       const channel = {}
@@ -40,6 +37,7 @@ class ImportCommand extends Command {
 
       this.log(`Channel ${channel.name} recognized.`)
       try {
+        // eslint-disable-next-line no-await-in-loop
         await Channel.create(channel)
       } catch (error) {
         this.error(error.message)
@@ -51,11 +49,12 @@ class ImportCommand extends Command {
     let [tokens, name] = line.split(',')
     channel.name = name.trim()
 
-    tokens = tokens.match(/\s*([^= ]+)=\"([^"]+)\"/g)
-        .map(token => token.trim())
+    tokens = tokens
+      .match(/\s*([^= ]+)="([^"]+)"/g)
+      .map(token => token.trim())
 
     for (let token of tokens) {
-      const [_, attribute, value] = token.match(TOKEN_REGEX)
+      const [attribute, value] = token.match(TOKEN_REGEX).slice(-2)
 
       channel[toCamelCase(attribute)] = value
     }
@@ -72,10 +71,10 @@ class ImportCommand extends Command {
   }
 }
 
-ImportCommand.description = `Import an existing playlist`
+ImportCommand.description = 'Import an existing playlist'
 
 ImportCommand.args = [
-  { name: 'file', required: true, description: 'm3u8 playlist to import'}
+  {name: 'file', required: true, description: 'm3u8 playlist to import'},
 ]
 
 module.exports = ImportCommand

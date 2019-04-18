@@ -1,6 +1,6 @@
 const {Command, flags} = require('@oclif/command')
-const { promisify } = require('util')
-const { exec } = require('child_process')
+const {promisify} = require('util')
+const {exec} = require('child_process')
 const {Channel, Sequelize} = require('../models')
 
 const execPromise = promisify(exec)
@@ -16,38 +16,37 @@ class PlayCommand extends Command {
       return
     }
 
-    let where;
+    let where
     if (id === -1) {
-      where = { name: { [Sequelize.Op.like]: [`%${name}%`] } }
+      where = {name: {[Sequelize.Op.like]: [`%${name}%`]}}
     } else {
-      where = { id: parseInt(id) }
+      where = {id: parseInt(id, 10)}
     }
 
-    const result = await Channel.findOne({ raw: true, where })
+    const result = await Channel.findOne({raw: true, where})
     if (result) {
       const {streamUrl, aspectRatio} = result
       const size = aspectRatio === '16:9' ? '-x 1280 -y 720' : '-x 1280 -y 960'
-      await exec(`ffplay ${size} "${streamUrl}"`)
+      await execPromise(`ffplay ${size} "${streamUrl}"`)
     } else {
       this.error('No channel found.')
     }
-
   }
 }
 
-PlayCommand.description = `Play a channel with the id or name specified`
+PlayCommand.description = 'Play a channel with the id or name specified'
 
 PlayCommand.flags = {
   id: flags.string({
     char: 'i',
     description: 'id to search',
-    exclusive: ['name']
+    exclusive: ['name'],
   }),
   name: flags.string({
     char: 'n',
     description: 'name to search',
-    exclusive: ['id']
-  })
+    exclusive: ['id'],
+  }),
 }
 
 module.exports = PlayCommand

@@ -12,37 +12,37 @@ class FindCommand extends Command {
       return
     }
 
-    let where;
+    let where
     if (id === -1) {
-      where = { name: { [Sequelize.Op.like]: [`%${name}%`] } }
+      where = {name: {[Sequelize.Op.like]: [`%${name}%`]}}
     } else {
-      where = { id: parseInt(id) }
+      where = {id: parseInt(id, 10)}
     }
 
-    const result = await Channel.findOne({ raw: true, where })
+    const result = await Channel.findOne({raw: true, where})
     if (result) {
       const {streamUrl, createdAt, updatedAt, ...channel} = result
+      // eslint-disable-next-line no-console
       console.table(channel)
     } else {
       this.error('No channel found.')
     }
-
   }
 }
 
-FindCommand.description = `Find a channel with the id or name specified`
+FindCommand.description = 'Find a channel with the id or name specified'
 
 FindCommand.flags = {
   id: flags.string({
     char: 'i',
     description: 'id to search',
-    exclusive: ['name']
+    exclusive: ['name'],
   }),
   name: flags.string({
     char: 'n',
     description: 'name to search',
-    exclusive: ['id']
-  })
+    exclusive: ['id'],
+  }),
 }
 
 module.exports = FindCommand

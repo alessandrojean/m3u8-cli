@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = (sequelize, DataTypes) => {
   const Channel = sequelize.define('Channel', {
@@ -9,8 +9,8 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     streamUrl: DataTypes.STRING,
     country: DataTypes.STRING,
-    continent: DataTypes.STRING
-  }, {});
+    continent: DataTypes.STRING,
+  }, {})
 
-  return Channel;
-};
+  return Channel
+}
