@@ -1,9 +1,6 @@
 const {Command, flags} = require('@oclif/command')
-const {promisify} = require('util')
-const {exec, spawn} = require('child_process')
+const {spawn} = require('child_process')
 const {Channel, Sequelize} = require('../models')
-
-const execPromise = promisify(exec)
 
 class PlayCommand extends Command {
   async run() {
