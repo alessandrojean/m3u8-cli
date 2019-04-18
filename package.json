@@ -12,6 +12,7 @@
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
     "axios": "^0.18.0",
+    "chalk": "^2.4.2",
     "cli-ux": "^5.2.1",
     "countries-list": "^2.4.2",
     "inquirer": "^6.2.2",

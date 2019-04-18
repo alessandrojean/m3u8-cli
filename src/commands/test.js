@@ -1,6 +1,7 @@
 const {Command, flags} = require('@oclif/command')
 const axios = require('axios')
 const ora = require('ora')
+const chalk = require('chalk')
 const {Channel, Sequelize} = require('../models')
 
 class TestCommand extends Command {
@@ -63,7 +64,7 @@ class TestCommand extends Command {
       this.log('All the channels are working.')
     } else {
       for (let {name, error} of withError) {
-        this.error(`${name} (${error})`)
+        this.log(`${chalk.red('[ERROR]')} ${name} (${error})`)
       }
     }
   }
