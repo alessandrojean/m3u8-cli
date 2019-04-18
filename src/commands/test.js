@@ -2,6 +2,7 @@ const {Command, flags} = require('@oclif/command')
 const axios = require('axios')
 const ora = require('ora')
 const chalk = require('chalk')
+const {cli} = require('cli-ux')
 const {Channel, Sequelize} = require('../models')
 
 class TestCommand extends Command {
@@ -58,14 +59,16 @@ class TestCommand extends Command {
 
     spinner.stop()
 
-    withError = withError.filter(x => x)
+    withError = withError
+      .filter(x => x)
+      .map(c => {
+        return {status: chalk.red('[ERROR]'), name: c.name, error: c.error}
+      })
 
     if (withError.length === 0) {
       this.log('All the channels are working.')
     } else {
-      for (let {name, error} of withError) {
-        this.log(`${chalk.red('[ERROR]')} ${name} (${error})`)
-      }
+      cli.table(withError, {status: {}, name: {}, error: {}})
     }
   }
 }
