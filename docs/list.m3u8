@@ -160,6 +160,10 @@ http://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master_900.m3u8
 #EXTBG: #012d5b
 https://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/index_1_av-p.m3u8?sd=10&rebase=on
 
+#EXTINF:-1 tvg-logo="https://i.imgur.com/4bJJr7m.png" aspect-ratio="16:9" type="stream", Das Erste
+#EXTBG: #093e82
+https://daserstehdint-lh.akamaihd.net/i/daserstehd_int@629195/index_3776_av-b.m3u8?sd=10&rebase=on
+
 #EXTINF:-1 tvg-name="Rai 4" tvg-logo="https://i.imgur.com/VtDfqZb.png" aspect-ratio="16:9" type="stream", Rai 4
 #EXTBG: #9d2fe5
 http://b2everyrai-lh.akamaihd.net/i/rai4_1@181951/index_1800_av-p.m3u8?sd=10&rebase=on
