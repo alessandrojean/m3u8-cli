@@ -23,9 +23,16 @@ class PlayCommand extends Command {
     const result = await Channel.findOne({raw: true, where})
     if (result) {
       const {streamUrl, aspectRatio} = result
-      const size = aspectRatio === '16:9' ?
-        ['-x', '1280', '-y', '720'] :
-        ['-x', '1280', '-y', '960']
+
+      if (flags.simple) {
+        this.log(streamUrl)
+        return
+      }
+
+      const size =
+        aspectRatio === '16:9' ?
+          ['-x', '1280', '-y', '720'] :
+          ['-x', '1280', '-y', '960']
 
       const args = [...size, streamUrl]
       const options = {detached: true, stdio: 'ignore'}
@@ -50,6 +57,10 @@ PlayCommand.flags = {
     char: 'n',
     description: 'name to search',
     exclusive: ['id'],
+  }),
+  simple: flags.boolean({
+    char: 'u',
+    description: 'if true, only prints the stream url',
   }),
 }
 
