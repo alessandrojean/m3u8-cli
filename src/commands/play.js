@@ -22,7 +22,7 @@ class PlayCommand extends Command {
 
     const result = await Channel.findOne({raw: true, where})
     if (result) {
-      const {streamUrl, aspectRatio} = result
+      const {streamUrl, aspectRatio, name} = result
 
       if (flags.simple) {
         this.log(streamUrl)
@@ -34,7 +34,7 @@ class PlayCommand extends Command {
           ['-x', '1280', '-y', '720'] :
           ['-x', '1280', '-y', '960']
 
-      const args = [...size, streamUrl]
+      const args = [...size, '-window_title', name, streamUrl]
       const options = {detached: true, stdio: 'ignore'}
 
       this.log('Running ffplay in background.')
