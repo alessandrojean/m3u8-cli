@@ -186,7 +186,7 @@
     "continent": "Asia",
     "country": "Iran",
     "logo": "https://i.imgur.com/vVxKXSS.png",
-    "url": "https://5a61de8ed719d.streamlock.net/liveprs/smil:liveprs.smil/chunklist_w902514396_b594100_slen.m3u8"
+    "url": "https://5a61de8ed719d.streamlock.net/liveprs/smil:liveprs.smil/playlist.m3u8"
   },
   {
     "name": "ANN",
@@ -582,7 +582,7 @@
     "continent": "North America",
     "country": "United States",
     "logo": "https://i.imgur.com/L9lYhWJ.png",
-    "url": "https://bblive-liveproduseast.hs.llnwd.net/us/Channel-USTV-AWS-virginia-1/Source-USTV-1000-1_live.m3u8"
+    "url": "https://d1g4mbj10o50ni.cloudfront.net/us/Channel-USTV-AWS-virginia-1/Source-USTV-1000-1_live.m3u8"
   },
   {
     "name": "CBSN",
