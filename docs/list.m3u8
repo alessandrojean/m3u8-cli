@@ -96,6 +96,10 @@ https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_2100.
 #EXTBG: #db0124
 https://n24-cdn-live-b.ntv.co.jp/ch01/High.m3u8
 
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Jw00oDX.png" aspect-ratio="16:9" type="stream", Weathernews
+#EXTBG: #0c419a
+http://movie.mcas.jp/mcas/wn1_2/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.imgur.com/WfnOkxd.png" aspect-ratio="4:3" type="stream", KCTV
 #EXTBG: #070a44
 https://tv.nknews.org/tvhls/stream.m3u8

@@ -216,6 +216,15 @@
     "url": "https://n24-cdn-live-b.ntv.co.jp/ch01/High.m3u8"
   },
   {
+    "name": "Weathernews",
+    "aspectRatio": "16:9",
+    "color": "#0c419a",
+    "continent": "Asia",
+    "country": "Japan",
+    "logo": "https://i.imgur.com/Jw00oDX.png",
+    "url": "http://movie.mcas.jp/mcas/wn1_2/master.m3u8"
+  },
+  {
     "name": "KCTV",
     "aspectRatio": "4:3",
     "color": "#070a44",
