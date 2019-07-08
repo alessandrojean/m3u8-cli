@@ -298,7 +298,7 @@ https://d2dn7ylrd9r3ds.cloudfront.net/liverts/televicentro.smil/chunklist_b12655
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/FRNmPwx.png" aspect-ratio="16:9" type="stream", ATV
 #EXTBG: #09809a
-https://dqsz3cincv704.cloudfront.net/pe/smil:canal_atv.smil/chunklist_b1056768.m3u8
+https://pe-atv-atv-live-0-cdn-0.ned.media/atv/smil:atv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-name="teleSUR" tvg-logo="https://i.imgur.com/4OwUVkf.png" aspect-ratio="16:9" type="stream", teleSUR
 #EXTBG: #2d1e3d
