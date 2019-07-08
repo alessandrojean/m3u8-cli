@@ -82,7 +82,7 @@ http://itv.ahau.edu.cn/hls/zjhd.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/vVxKXSS.png" aspect-ratio="16:9" type="stream", PressTV
 #EXTBG: #252525
-https://5a61de8ed719d.streamlock.net/liveprs/smil:liveprs.smil/chunklist_w902514396_b594100_slen.m3u8
+https://5a61de8ed719d.streamlock.net/liveprs/smil:liveprs.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/mKcwcJl.png" aspect-ratio="16:9" type="stream", ANN
 #EXTBG: #1a2c60
@@ -150,7 +150,7 @@ http://tbs.hscdn.com/tbstvweb/tbstv/playlist.m3u8
 
 #EXTINF:-1 tvg-name="TRT World" tvg-logo="https://i.imgur.com/oFqTaFt.png" aspect-ratio="16:9" type="stream", TRT World
 #EXTBG: #222
-https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-b.m3u8?sd=10&rebase=on
+https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/APRmzL3.png" aspect-ratio="16:9" type="stream", Al Jazeera
 #EXTBG: #222525
@@ -258,7 +258,7 @@ https://adultswimhls-i.akamaihd.net/hls/live/238460-b/adultswim/main/1/master_La
 
 #EXTINF:-1 tvg-name="Bloomberg" tvg-logo="https://i.imgur.com/L9lYhWJ.png" aspect-ratio="16:9" type="stream", Bloomberg
 #EXTBG: #000000
-https://bblive-liveproduseast.hs.llnwd.net/us/Channel-USTV-AWS-virginia-1/Source-USTV-1000-1_live.m3u8
+https://d1g4mbj10o50ni.cloudfront.net/us/Channel-USTV-AWS-virginia-1/Source-USTV-1000-1_live.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/UDnAMEy.png" aspect-ratio="16:9" type="stream", CBSN
 #EXTBG: #231f20
@@ -267,6 +267,10 @@ http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/index_2200_av-p.m3u8?sd=10&re
 #EXTINF:-1 tvg-logo="https://i.imgur.com/zwmjsB6.png" aspect-ratio="16:9" type="stream", Red Bull TV
 #EXTBG: #011325
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/iJuj2kW.png" aspect-ratio="16:9" type="stream", Rooster Teeth TV
+#EXTBG: #d72c2f
+https://d2klx6wjx7p5vm.cloudfront.net/Rooster-teeth/ngrp:Rooster-teeth_all/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/oCKpWJ9.png" aspect-ratio="16:9" type="stream", Bolivisión
 #EXTBG: #190d0d

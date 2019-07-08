@@ -339,7 +339,7 @@
     "continent": "Asia",
     "country": "Turkey",
     "logo": "https://i.imgur.com/oFqTaFt.png",
-    "url": "https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-b.m3u8?sd=10&rebase=on"
+    "url": "https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on"
   },
   {
     "name": "Al Jazeera",
@@ -601,6 +601,15 @@
     "country": "United States",
     "logo": "https://i.imgur.com/zwmjsB6.png",
     "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8"
+  },
+  {
+    "name": "Rooster Teeth TV",
+    "aspectRatio": "16:9",
+    "color": "#d72c2f",
+    "continent": "North America",
+    "country": "United States",
+    "logo": "https://i.imgur.com/iJuj2kW.png",
+    "url": "https://d2klx6wjx7p5vm.cloudfront.net/Rooster-teeth/ngrp:Rooster-teeth_all/playlist.m3u8"
   },
   {
     "name": "Bolivisión",
