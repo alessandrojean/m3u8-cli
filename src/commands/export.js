@@ -3,7 +3,7 @@ const {promisify} = require('util')
 const {writeFile} = require('fs')
 const path = require('path')
 const {Channel} = require('../models')
-const {defaultOutput, defaultPath} = require('../config/exporter')
+const {baseUrl, defaultOutput, defaultPath} = require('../config/exporter')
 const {countries} = require('countries-list')
 
 const writeFilePromise = promisify(writeFile)
@@ -36,7 +36,7 @@ const createMasterM3U8 = dbCountries => {
     const flag = `https://www.countryflags.io/${countryCode}/flat/64.png`
 
     fileContent += `\n#EXTINF:0 type="playlist" tvg-logo="${flag}", ${country.country}`
-    fileContent += `\ncountries/${countryCode}.m3u8\n`
+    fileContent += `\n${baseUrl}countries/${countryCode}.m3u8\n`
   }
   return fileContent
 }
