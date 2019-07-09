@@ -36,7 +36,7 @@ const createMasterM3U8 = dbCountries => {
     const flag = `https://www.countryflags.io/${countryCode}/flat/64.png`
 
     fileContent += `\n#EXTINF:0 type="playlist" tvg-logo="${flag}", ${country.country}`
-    fileContent += `\n${countryCode}.m3u8\n`
+    fileContent += `\ncountries/${countryCode}.m3u8\n`
   }
   return fileContent
 }

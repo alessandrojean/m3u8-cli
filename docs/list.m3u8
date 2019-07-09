@@ -1,64 +1,64 @@
 #EXTM3U
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/BO/flat/64.png", Bolivia
-BO.m3u8
+countries/BO.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/BR/flat/64.png", Brazil
-BR.m3u8
+countries/BR.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CL/flat/64.png", Chile
-CL.m3u8
+countries/CL.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CN/flat/64.png", China
-CN.m3u8
+countries/CN.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CO/flat/64.png", Colombia
-CO.m3u8
+countries/CO.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/EC/flat/64.png", Ecuador
-EC.m3u8
+countries/EC.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/FR/flat/64.png", France
-FR.m3u8
+countries/FR.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/DE/flat/64.png", Germany
-DE.m3u8
+countries/DE.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/IR/flat/64.png", Iran
-IR.m3u8
+countries/IR.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/IT/flat/64.png", Italy
-IT.m3u8
+countries/IT.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/JP/flat/64.png", Japan
-JP.m3u8
+countries/JP.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/MX/flat/64.png", Mexico
-MX.m3u8
+countries/MX.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KP/flat/64.png", North Korea
-KP.m3u8
+countries/KP.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/PE/flat/64.png", Peru
-PE.m3u8
+countries/PE.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/RU/flat/64.png", Russia
-RU.m3u8
+countries/RU.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KR/flat/64.png", South Korea
-KR.m3u8
+countries/KR.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/ES/flat/64.png", Spain
-ES.m3u8
+countries/ES.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/TR/flat/64.png", Turkey
-TR.m3u8
+countries/TR.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/AE/flat/64.png", United Arab Emirates
-AE.m3u8
+countries/AE.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/US/flat/64.png", United States
-US.m3u8
+countries/US.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/VE/flat/64.png", Venezuela
-VE.m3u8
+countries/VE.m3u8
