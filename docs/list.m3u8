@@ -1,313 +1,64 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/maajnAz.png" aspect-ratio="16:9" type="stream", CCTV-01
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv1hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/9NjdAH5.png" aspect-ratio="16:9" type="stream", CCTV-02
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv2hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Tk1Pe99.png" aspect-ratio="16:9" type="stream", CCTV-03
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv3hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ioWfrOk.png" aspect-ratio="16:9" type="stream", CCTV-04
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv4hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/aHrh0nn.png" aspect-ratio="16:9" type="stream", CCTV-05
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv5hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/dIOvfzD.png" aspect-ratio="16:9" type="stream", CCTV-05+
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv5phd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/stkjjTW.png" aspect-ratio="16:9" type="stream", CCTV-06
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv6hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/TWMN0EP.png" aspect-ratio="16:9" type="stream", CCTV-07
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv7hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/lLpdEIA.png" aspect-ratio="16:9" type="stream", CCTV-08
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv8hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1ePB3LV.png" aspect-ratio="16:9" type="stream", CCTV-09
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv9hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/YmgGeaN.png" aspect-ratio="16:9" type="stream", CCTV-10
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv10hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/RDjwXh0.png" aspect-ratio="16:9" type="stream", CCTV-11
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv11.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/qW1wxBM.png" aspect-ratio="16:9" type="stream", CCTV-12
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv12hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/3whvjPd.png" aspect-ratio="16:9" type="stream", CCTV-13
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv13.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/9Wbp5Vx.png" aspect-ratio="16:9" type="stream", CCTV-14
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv14hd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Y3IsboW.png" aspect-ratio="16:9" type="stream", CCTV-15
-#EXTBG: #363739
-http://itv.ahau.edu.cn/hls/cctv15.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/DBdekN5.png" aspect-ratio="16:9" type="stream", CGTN
-#EXTBG: #2e2e2e
-https://live.cgtn.com/1000/prog_index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ProKT8U.png" aspect-ratio="16:9" type="stream", CGTN Documentary
-#EXTBG: #2e2e2e
-https://livedoc.cgtn.com/1000d/prog_index.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/fYeEIPF.png" aspect-ratio="16:9" type="stream", Dragon TV
-#EXTBG: #800000
-http://itv.ahau.edu.cn/hls/dfhd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/I1WytNh.png" aspect-ratio="16:9" type="stream", Zhejiang
-#EXTBG: #2691cf
-http://itv.ahau.edu.cn/hls/zjhd.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/vVxKXSS.png" aspect-ratio="16:9" type="stream", PressTV
-#EXTBG: #252525
-https://5a61de8ed719d.streamlock.net/liveprs/smil:liveprs.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/mKcwcJl.png" aspect-ratio="16:9" type="stream", ANN
-#EXTBG: #1a2c60
-https://www.youtube.com/watch?v=coYw-eVU0Ks
-
-#EXTINF:-1 tvg-name="NHK World" tvg-logo="https://i.imgur.com/gsWnza2.png" aspect-ratio="16:9" type="stream", NHK World Japan
-#EXTBG: #323838
-https://b-nhkwlive-xjp.akamaized.net/hls/live/2003458-b/nhkwlive-xjp/index_2100.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/jj1dLrS.png" aspect-ratio="16:9" type="stream", Nippon News 24
-#EXTBG: #db0124
-https://n24-cdn-live-b.ntv.co.jp/ch01/High.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/SmomaI8.png" aspect-ratio="16:9" type="stream", Tokyo MX 2
-#EXTBG: #ffffff
-http://movie.mcas.jp/mcas/mx2_2/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Jw00oDX.png" aspect-ratio="16:9" type="stream", Weathernews
-#EXTBG: #0c419a
-http://movie.mcas.jp/mcas/wn1_2/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/WfnOkxd.png" aspect-ratio="4:3" type="stream", KCTV
-#EXTBG: #070a44
-https://tv.nknews.org/tvhls/stream.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/9RwyaYX.png" aspect-ratio="16:9" type="stream", Arirang UN
-#EXTBG: #000000
-http://amdlive.ctnd.com.edgesuite.net/arirang_2ch/smil:arirang_2ch.smil/chunklist_b1728000_sleng.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/9RwyaYX.png" aspect-ratio="16:9" type="stream", Arirang World
-#EXTBG: #000000
-http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b1728000_sleng.m3u8
-
-#EXTINF:-1 tvg-name="EBS Kids" tvg-logo="https://i.imgur.com/3WjFGay.png" aspect-ratio="16:9" type="stream", EBS Kids
-#EXTBG: #1f3468
-http://ebsonair.ebs.co.kr:1935/ebsufamilypc/familypc1m/playlist.m3u8
-
-#EXTINF:-1 tvg-name="EBS PLUS1" tvg-logo="https://i.imgur.com/eMWbhpA.png" aspect-ratio="16:9" type="stream", EBS+ 1
-#EXTBG: #1f3468
-http://58.229.187.43/plus1familypc/_definst_/familypc1m/playlist.m3u8
-
-#EXTINF:-1 tvg-name="EBS PLUS2" tvg-logo="https://i.imgur.com/LI4l4sq.png" aspect-ratio="16:9" type="stream", EBS+ 2
-#EXTBG: #1f3468
-http://110.10.122.111/plus2familypc/_definst_/familypc1m/playlist.m3u8
-
-#EXTINF:-1 tvg-name="EBS1" tvg-logo="https://i.imgur.com/kilKnQK.png" aspect-ratio="16:9" type="stream", EBS1
-#EXTBG: #1f3468
-http://ebsonair.ebs.co.kr:1935/ebs1familypc/familypc1m/playlist.m3u8
-
-#EXTINF:-1 tvg-name="EBS2" tvg-logo="https://i.imgur.com/ZJY9R8o.png" aspect-ratio="16:9" type="stream", EBS2
-#EXTBG: #1f3468
-http://222.239.21.155/ebs2familypc/_definst_/familypc1m/playlist.m3u8
-
-#EXTINF:-1 tvg-name="EBSe" tvg-logo="https://i.imgur.com/eNazlEM.png" aspect-ratio="16:9" type="stream", EBSe
-#EXTBG: #1f3468
-http://ebsonair.ebs.co.kr:1935/plus3familypc/familypc1m/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1dHjnRB.png" aspect-ratio="16:9" type="stream", KBS World 24
-#EXTBG: #000000
-https://www.youtube.com/watch?v=WCGFReEDws8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/mBF43Zd.png" aspect-ratio="16:9" type="stream", YTN
-#EXTBG: #000000
-http://ytnmmd.mmdlive.lldns.net/ytnmmd/9484b70302db4786886ae40308bf45a1/chunklist_b2592000.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/I895PRL.png" aspect-ratio="16:9" type="stream", YTN News
-#EXTBG: #000000
-https://www.youtube.com/watch?v=U_sYIKWhJvk
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/XYl6k4L.png" aspect-ratio="16:9" type="stream", tbs
-#EXTBG: #6295c8
-http://tbs.hscdn.com/tbstvweb/tbstv/playlist.m3u8
-
-#EXTINF:-1 tvg-name="TRT World" tvg-logo="https://i.imgur.com/oFqTaFt.png" aspect-ratio="16:9" type="stream", TRT World
-#EXTBG: #222
-https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/APRmzL3.png" aspect-ratio="16:9" type="stream", Al Jazeera
-#EXTBG: #222525
-https://english.streaming.aljazeera.net/aljazeera/english2/index4147.m3u8
-
-#EXTINF:-1 tvg-name="France 24" tvg-logo="https://i.imgur.com/7jJdxFb.png" aspect-ratio="16:9" type="stream", France 24
-#EXTBG: #00a7e3
-http://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master_900.m3u8
-
-#EXTINF:-1 tvg-name="DWTV" tvg-logo="https://i.imgur.com/ol2OStx.png" aspect-ratio="16:9" type="stream", DW
-#EXTBG: #012d5b
-https://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/index_1_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/4bJJr7m.png" aspect-ratio="16:9" type="stream", Das Erste
-#EXTBG: #093e82
-https://daserstehdint-lh.akamaihd.net/i/daserstehd_int@629195/index_3776_av-b.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-name="Rai 4" tvg-logo="https://i.imgur.com/VtDfqZb.png" aspect-ratio="16:9" type="stream", Rai 4
-#EXTBG: #9d2fe5
-http://b2everyrai-lh.akamaihd.net/i/rai4_1@181951/index_1800_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-name="Rai 5" tvg-logo="https://i.imgur.com/MWrcXvu.png" aspect-ratio="16:9" type="stream", Rai 5
-#EXTBG: #606806
-http://b2everyrai-lh.akamaihd.net/i/rai5_1@182695/index_1800_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-name="Rai Gulp" tvg-logo="https://i.imgur.com/XOLHFxD.png" aspect-ratio="16:9" type="stream", Rai Gulp
-#EXTBG: #00ccff
-http://b2everyrai-lh.akamaihd.net/i/raigulp_1@66350/master.m3u8
-
-#EXTINF:-1 tvg-name="Rai Movie" tvg-logo="https://i.imgur.com/oSv1h2H.png" aspect-ratio="16:9" type="stream", Rai Movie
-#EXTBG: #7d0841
-http://b2everyrai-lh.akamaihd.net/i/raimovie_1@67348/index_1800_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-name="Rai News24" tvg-logo="https://i.imgur.com/RGvOfPQ.png" aspect-ratio="16:9" type="stream", Rai News24
-#EXTBG: #3b6ae4
-https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews_1800/chunklist.m3u8
-
-#EXTINF:-1 tvg-name="Rai Premium" tvg-logo="https://i.imgur.com/NP1dlUe.png" aspect-ratio="16:9" type="stream", Rai Premium
-#EXTBG: #135f7e
-http://b2everyrai-lh.akamaihd.net/i/raipremium_1@181837/index_1800_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-name="Rai YoYo" tvg-logo="https://i.imgur.com/4NHHaum.png" aspect-ratio="16:9" type="stream", Rai YoYo
-#EXTBG: #009933
-http://b2everyrai-lh.akamaihd.net/i/raiyoyo_1@191405/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/wAYDCDO.png" aspect-ratio="16:9" type="stream", RT Documentary
-#EXTBG: #12100b
-https://rt-doc.secure.footprint.net/1101-inadv-qidx-1k_v3.m3u8?stream_start_offset=14000000&stream_dvr_window=0
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/xFOOo6S.png" aspect-ratio="16:9" type="stream", RT News
-#EXTBG: #12100b
-https://rt-news.secure.footprint.net/1103-inadv-qidx-1k_v3.m3u8?stream_start_offset=14000000&stream_dvr_window=0
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/RaOuqJJ.png" aspect-ratio="16:9" type="stream", 24 Horas
-#EXTBG: #444444
-http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/index_1500_av-b.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/6G4qXsM.png" aspect-ratio="16:9" type="stream", Bemad
-#EXTBG: #3051b0
-https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/rwGp9hj.png" aspect-ratio="16:9" type="stream", Boing
-#EXTBG: #0d9dd1
-https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/8AJc0po.png" aspect-ratio="16:9" type="stream", Cuatro
-#EXTBG: #ff0000
-https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/ubIUY74.png" aspect-ratio="16:9" type="stream", Divinity
-#EXTBG: #e83c85
-https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/cbsSrdz.png" aspect-ratio="16:9" type="stream", Energy
-#EXTBG: #1A1A1A
-https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/9jLBBlP.png" aspect-ratio="16:9" type="stream", FDF
-#EXTBG: #46ac09
-https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/a7upVAo.png" aspect-ratio="16:9" type="stream", La Dos
-#EXTBG: #444444
-http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_1500_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/uopQ68Y.png" aspect-ratio="16:9" type="stream", La Uno
-#EXTBG: #444444
-http://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@583043/index_2800_av-b.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/K1Pu7Ix.png" aspect-ratio="16:9" type="stream", Telecinco
-#EXTBG: #0098d1
-https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_4.m3u8
-
-#EXTINF:-1 tvg-name="Foro TV" tvg-logo="https://i.imgur.com/y6HiC4W.png" aspect-ratio="16:9" type="stream", FOROtv
-#EXTBG: #3e95ff
-https://d2416wdkjdz9sf.cloudfront.net/forotv/forotvm_1280x720_2500k.m3u8
-
-#EXTINF:-1 tvg-name="ABC News" tvg-logo="https://i.imgur.com/2Eucr7j.png" aspect-ratio="16:9" type="stream", ABC News
-#EXTBG: #000000
-https://abclive2-lh.akamaihd.net/i/abc_live11@423404/index_4000_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1890dvc.png" aspect-ratio="16:9" type="stream", Adult Swim
-#EXTBG: #171717
-https://adultswimhls-i.akamaihd.net/hls/live/238460-b/adultswim/main/1/master_Layer7.m3u8
-
-#EXTINF:-1 tvg-name="Bloomberg" tvg-logo="https://i.imgur.com/L9lYhWJ.png" aspect-ratio="16:9" type="stream", Bloomberg
-#EXTBG: #000000
-https://d1g4mbj10o50ni.cloudfront.net/us/Channel-USTV-AWS-virginia-1/Source-USTV-1000-1_live.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/UDnAMEy.png" aspect-ratio="16:9" type="stream", CBSN
-#EXTBG: #231f20
-http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/index_2200_av-p.m3u8?sd=10&rebase=on
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/zwmjsB6.png" aspect-ratio="16:9" type="stream", Red Bull TV
-#EXTBG: #011325
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_6660.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/iJuj2kW.png" aspect-ratio="16:9" type="stream", Rooster Teeth TV
-#EXTBG: #d72c2f
-https://d2klx6wjx7p5vm.cloudfront.net/Rooster-teeth/ngrp:Rooster-teeth_all/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/oCKpWJ9.png" aspect-ratio="16:9" type="stream", Bolivisión
-#EXTBG: #190d0d
-https://d4nh68h7k2i2d.cloudfront.net/bo/bolivision/smil:bo.smil/chunklist_b1122304.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Uuty5zp.png" aspect-ratio="16:9" type="stream", CBTV
-#EXTBG: #111111
-https://sa-all13.secdn.net/cbtv-channel/play/mp4:stream/chunklist_w1662090379.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/yMpdsMB.png" aspect-ratio="16:9" type="stream", TV Aracati
-#EXTBG: #000000
-https://v7.ciclano.io:1443/tvaracati/_definst_/tvaracati/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0DYDRV2.png" aspect-ratio="16:9" type="stream", La Red
-#EXTBG: #dd0767
-https://cl-lared-lared-live-0-cdn-0.ned.media/lared/smil:lared.smil/chunklist_b1000000.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/33BPpld.png" aspect-ratio="16:9" type="stream", RCN
-#EXTBG: #0c5fb6
-https://rcnhd.cdn.net.co/live01/rcnhd_720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Z2iSpTi.png" aspect-ratio="16:9" type="stream", TVC
-#EXTBG: #222222
-https://d2dn7ylrd9r3ds.cloudfront.net/liverts/televicentro.smil/chunklist_b1265536.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/FRNmPwx.png" aspect-ratio="16:9" type="stream", ATV
-#EXTBG: #09809a
-https://pe-atv-atv-live-0-cdn-0.ned.media/atv/smil:atv.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-name="teleSUR" tvg-logo="https://i.imgur.com/4OwUVkf.png" aspect-ratio="16:9" type="stream", teleSUR
-#EXTBG: #2d1e3d
-https://d7g1ebft2592.cloudfront.net/mblivev3/hd/chunklist_w801355776.m3u8
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/BO/flat/64.png", Bolivia
+BO.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/BR/flat/64.png", Brazil
+BR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CL/flat/64.png", Chile
+CL.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CN/flat/64.png", China
+CN.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CO/flat/64.png", Colombia
+CO.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/EC/flat/64.png", Ecuador
+EC.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/FR/flat/64.png", France
+FR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/DE/flat/64.png", Germany
+DE.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/IR/flat/64.png", Iran
+IR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/IT/flat/64.png", Italy
+IT.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/JP/flat/64.png", Japan
+JP.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/MX/flat/64.png", Mexico
+MX.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KP/flat/64.png", North Korea
+KP.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/PE/flat/64.png", Peru
+PE.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/RU/flat/64.png", Russia
+RU.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KR/flat/64.png", South Korea
+KR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/ES/flat/64.png", Spain
+ES.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/TR/flat/64.png", Turkey
+TR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/AE/flat/64.png", United Arab Emirates
+AE.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/US/flat/64.png", United States
+US.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/VE/flat/64.png", Venezuela
+VE.m3u8

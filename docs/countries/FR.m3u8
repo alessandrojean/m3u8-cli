@@ -1,0 +1,5 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-name="France 24" tvg-logo="https://i.imgur.com/7jJdxFb.png" aspect-ratio="16:9" type="stream", France 24
+#EXTBG: #00a7e3
+http://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master_900.m3u8

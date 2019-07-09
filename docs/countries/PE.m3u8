@@ -1,0 +1,5 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/FRNmPwx.png" aspect-ratio="16:9" type="stream", ATV
+#EXTBG: #09809a
+https://pe-atv-atv-live-0-cdn-0.ned.media/atv/smil:atv.smil/playlist.m3u8

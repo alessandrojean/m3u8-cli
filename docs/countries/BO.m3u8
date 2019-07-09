@@ -1,0 +1,5 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/oCKpWJ9.png" aspect-ratio="16:9" type="stream", Bolivisión
+#EXTBG: #190d0d
+https://d4nh68h7k2i2d.cloudfront.net/bo/bolivision/smil:bo.smil/chunklist_b1122304.m3u8

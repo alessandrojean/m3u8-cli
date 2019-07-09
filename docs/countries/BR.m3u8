@@ -1,0 +1,9 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Uuty5zp.png" aspect-ratio="16:9" type="stream", CBTV
+#EXTBG: #111111
+https://sa-all13.secdn.net/cbtv-channel/play/mp4:stream/chunklist_w1662090379.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/yMpdsMB.png" aspect-ratio="16:9" type="stream", TV Aracati
+#EXTBG: #000000
+https://v7.ciclano.io:1443/tvaracati/_definst_/tvaracati/playlist.m3u8
