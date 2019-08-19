@@ -10,7 +10,7 @@ https://5a7bcfb834235.streamlock.net/fiocruz/fiocruz/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/yMpdsMB.png" aspect-ratio="16:9" type="stream", TV Aracati
 #EXTBG: #000000
-https://v7.ciclano.io:1443/tvaracati/_definst_/tvaracati/playlist.m3u8
+https://srv1.zcast.com.br/tvaracati/tvaracati/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/9chKtaz.png" aspect-ratio="16:9" type="stream", TV Brasil 2
 #EXTBG: #f2f2f2

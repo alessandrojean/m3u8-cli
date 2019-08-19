@@ -1,22 +1,13 @@
 #EXTM3U
 
-#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/BO/flat/64.png", Bolivia
-https://alessandrojean.github.io/m3u8-cli/countries/BO.m3u8
-
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/BR/flat/64.png", Brazil
 https://alessandrojean.github.io/m3u8-cli/countries/BR.m3u8
-
-#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CL/flat/64.png", Chile
-https://alessandrojean.github.io/m3u8-cli/countries/CL.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CN/flat/64.png", China
 https://alessandrojean.github.io/m3u8-cli/countries/CN.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CO/flat/64.png", Colombia
 https://alessandrojean.github.io/m3u8-cli/countries/CO.m3u8
-
-#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/EC/flat/64.png", Ecuador
-https://alessandrojean.github.io/m3u8-cli/countries/EC.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/FR/flat/64.png", France
 https://alessandrojean.github.io/m3u8-cli/countries/FR.m3u8
@@ -38,9 +29,6 @@ https://alessandrojean.github.io/m3u8-cli/countries/MX.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KP/flat/64.png", North Korea
 https://alessandrojean.github.io/m3u8-cli/countries/KP.m3u8
-
-#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/PE/flat/64.png", Peru
-https://alessandrojean.github.io/m3u8-cli/countries/PE.m3u8
 
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/RU/flat/64.png", Russia
 https://alessandrojean.github.io/m3u8-cli/countries/RU.m3u8
