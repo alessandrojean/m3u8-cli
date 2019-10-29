@@ -30,6 +30,9 @@ https://alessandrojean.github.io/m3u8-cli/countries/MX.m3u8
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KP/flat/64.png", North Korea
 https://alessandrojean.github.io/m3u8-cli/countries/KP.m3u8
 
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/PT/flat/64.png", Portugal
+https://alessandrojean.github.io/m3u8-cli/countries/PT.m3u8
+
 #EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/RU/flat/64.png", Russia
 https://alessandrojean.github.io/m3u8-cli/countries/RU.m3u8
 
