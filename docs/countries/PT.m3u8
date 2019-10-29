@@ -11,3 +11,11 @@ http://streaming-live-app.rtp.pt/liverepeater/smil:rtp2.smil/chunklist_b1290000_
 #EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", RTP 3
 #EXTBG: #000000
 http://streaming-live-app.rtp.pt/liverepeater/smil:rtpn.smil/chunklist_b1290000_slpt.m3u8
+
+#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", TVI
+#EXTBG: #000000
+http://video-auth7.iol.pt/live_tvi/live_tvi/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", TVI 24
+#EXTBG: #000000
+http://video-auth7.iol.pt/live_tvi24/live_tvi24/playlist.m3u8
