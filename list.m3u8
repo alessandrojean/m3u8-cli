@@ -110,7 +110,7 @@ https://tv.nknews.org/tvhls/stream.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/9RwyaYX.png" aspect-ratio="16:9" type="stream", Arirang UN
 #EXTBG: #000000
-http://amdlive.ctnd.com.edgesuite.net/arirang_2ch/smil:arirang_2ch.smil/chunklist_b1728000_sleng.m3u8
+https://www.youtube.com/watch?v=Od6FreN_CnE
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/9RwyaYX.png" aspect-ratio="16:9" type="stream", Arirang World
 #EXTBG: #000000
@@ -158,7 +158,7 @@ http://tbs.hscdn.com/tbstvweb/tbstv/playlist.m3u8
 
 #EXTINF:-1 tvg-name="TRT World" tvg-logo="https://i.imgur.com/oFqTaFt.png" aspect-ratio="16:9" type="stream", TRT World
 #EXTBG: #222
-https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_720p_av-p.m3u8?sd=10&amp;rebase=on
+https://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/index_1080p_av-b.m3u8?sd=10&amp;rebase=on
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/APRmzL3.png" aspect-ratio="16:9" type="stream", Al Jazeera
 #EXTBG: #222525
@@ -286,7 +286,7 @@ https://abclive2-lh.akamaihd.net/i/abc_live11@423404/index_4000_av-p.m3u8?sd=10&
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/1890dvc.png" aspect-ratio="16:9" type="stream", Adult Swim
 #EXTBG: #171717
-https://adultswimhls-i.akamaihd.net/hls/live/238460-b/adultswim/main/1/master_Layer7.m3u8
+https://adultswimtv.warnermediacdn.com/hls/live/2007031/livestream/master_Layer7.m3u8
 
 #EXTINF:-1 tvg-name="Bloomberg" tvg-logo="https://i.imgur.com/L9lYhWJ.png" aspect-ratio="16:9" type="stream", Bloomberg
 #EXTBG: #000000
