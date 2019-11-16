@@ -1,5 +1,0 @@
-#EXTM3U
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/Z2iSpTi.png" aspect-ratio="16:9" type="stream", TVC
-#EXTBG: #222222
-https://d2dn7ylrd9r3ds.cloudfront.net/liverts/televicentro.smil/chunklist_b1265536.m3u8

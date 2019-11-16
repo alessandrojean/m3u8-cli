@@ -1,5 +1,0 @@
-#EXTM3U
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/0DYDRV2.png" aspect-ratio="16:9" type="stream", La Red
-#EXTBG: #dd0767
-https://cl-lared-lared-live-0-cdn-0.ned.media/lared/smil:lared.smil/chunklist_b1000000.m3u8

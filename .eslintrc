@@ -1,6 +1,0 @@
-{
-  "extends": "oclif",
-  "rules": {
-    "indent": ["error", 2, {"MemberExpression": 1}]
-  }
-}
