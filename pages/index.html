@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Legal-IPTV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="markdown-body">
+  <h1>Legal-IPTV</h1>
+  <p>
+    Este repositório possui uma lista de canais que são gratuitos e abertos.
+  </p>
+
+  <p>
+    Você pode adicionar a lista em qualquer aplicativo agregador de IPTV.
+  </p>
+
+  <dl>
+    <dt>Link da <em>playlist</em></dt>
+    <dd>
+      <a href="list.m3u8" rel="nofollow" download></a>
+    </dd>
+    <dt>Link da <em>playlist</em> categorizada por países</dt>
+    <dd>
+      <a href="grouped.m3u8" rel="nofollow" download></a>
+    </dd>
+  </dl>
+
+  <p>
+    Os links das <em>streams</em> foram retirados de sites oficiais.
+  </p>
+
+  <h2>Algumas observações</h2>
+
+  <ul>
+    <li>
+      Alguns canais têm seu acesso restrito ao país de origem.
+    </li>
+    <li>
+      Canais pagos não são inclusos na lista.
+    </li>
+    <li>
+      O repositório não disponibiliza um serviço de EPG.
+    </li>
+  </ul>
+
+  <script>
+    for (let a of document.links) {
+      if (a.innerHTML === '') {
+        a.innerHTML = a.href;
+      }
+    }
+  </script>
+</body>
+</html>
