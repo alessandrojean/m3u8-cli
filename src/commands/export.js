@@ -1,6 +1,6 @@
 const {Command} = require('@oclif/command')
 const {promisify} = require('util')
-const {writeFile, mkdir} = require('fs')
+const {writeFile, mkdir, existsSync} = require('fs')
 const path = require('path')
 const {Channel} = require('../models')
 const {baseUrl, defaultPath} = require('../config/exporter')
@@ -24,6 +24,7 @@ const fillCountryChannels = async ({country}) => {
   return {
     name: country,
     code: countryCode,
+    emoji: countries[countryCode].emoji,
     channels,
   }
 }
@@ -65,7 +66,10 @@ const createGroupedM3u8 = async groupedChannels => {
   )
   await writeFilePromise(masterOutput, renderedStr)
   // Create the output folder.
-  await mkdirPromise(path.join(defaultPath, 'countries'))
+  const countryFolder = path.join(defaultPath, 'countries')
+  if (!existsSync(countryFolder)) {
+    await mkdirPromise(countryFolder)
+  }
   // Create the individual playlists.
   for (const country of groupedChannels) {
     const output = path.join(defaultPath, 'countries', `${country.code}.m3u8`)
@@ -75,12 +79,20 @@ const createGroupedM3u8 = async groupedChannels => {
   }
 }
 
+const createHtml = async groupedChannels => {
+  const template = path.join(__dirname, '../templates/index.html.ejs')
+  const output = path.join(defaultPath, 'index.html')
+  const renderedStr = await ejs.renderFile(template, {groupedChannels}, {async: true})
+  await writeFilePromise(output, renderedStr)
+}
+
 class ExportCommand extends Command {
   async run() {
     try {
       const {channels, groupedChannels} = await getData()
       await createCompleteM3u8(channels)
       await createGroupedM3u8(groupedChannels)
+      await createHtml(groupedChannels)
     } catch (error) {
       this.error(error)
     }

@@ -33,6 +33,25 @@
     Os links das <em>streams</em> foram retirados de sites oficiais.
   </p>
 
+  <h2>Canais disponíveis</h2>
+
+  Abaixo você encontra uma lista de canais disponíveis na lista.
+
+  <% for (const country of groupedChannels) { %>
+  <h3>
+    <%= country.emoji %> <%= country.name %>
+  </h3>
+  <ul class="channel-group">
+    <% for (const channel of country.channels) { %>
+    <li class="channel">
+      <div class="channel-image" style="color: <%= channel.color %>;">
+        <img src="<%= channel.tvgLogo %>" alt="<%= channel.name %>" class="channel-logo">
+      </div>
+    </li>
+    <% } %>
+  </ul>
+  <% } %>
+
   <h2>Algumas observações</h2>
 
   <ul>
@@ -40,12 +59,33 @@
       Alguns canais têm seu acesso restrito ao país de origem.
     </li>
     <li>
-      Canais pagos não são inclusos na lista.
+      Não necessariamente todos os canais funcionam sempre.
+    </li>
+    <li>
+      Canais pagos não são incluídos na lista.
     </li>
     <li>
       O repositório não disponibiliza um serviço de EPG.
     </li>
   </ul>
+
+  <h2>Sobre</h2>
+
+  <p>
+    O site, bem como seu gerenciador, são <em>open source</em>, e podem
+    ser encontrados no <a href="https://github.com/alessandrojean/m3u8-cli" rel="nofollow" target="_blank">GitHub</a>.
+  </p>
+
+  <p>Críticas <em>construtivas</em> e sugestões são bem-vindas!</p>
+
+  <p>
+    Fique a vontade caso queira criar uma <em>issue</em> ou um
+    <em>pull request</em> no repositório.
+  </p>
+
+  <hr/>
+
+  <p><em>Última atualização: <%= new Date().toLocaleDateString('pt-BR', {day: '2-digit', month: '2-digit', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'}) %></em></p>
 
   <script>
     for (let a of document.links) {
