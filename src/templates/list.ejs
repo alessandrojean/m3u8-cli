@@ -1,0 +1,6 @@
+#EXTM3U
+<% for (const c of channels) {%>
+#EXTINF:-1 <% if (c.tvgName) { %>tvg-name="<%= c.tvgName %>" <% } %>tvg-logo="<%= c.tvgLogo %>" aspect-ratio="<%= c.aspectRatio %>" type="stream", <%= c.name %>
+#EXTBG: <%= c.color %>
+<%= c.streamUrl %>
+<% } %>

@@ -1,0 +1,5 @@
+#EXTM3U
+<% for (const c of countries) {%>
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/<%= c.code %>/flat/64.png", <%= c.name %>
+<%= baseUrl %>countries/<%= c.code %>.m3u8
+<% } %>

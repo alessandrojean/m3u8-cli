@@ -1,5 +1,0 @@
-#EXTM3U
-
-#EXTINF:-1 tvg-name="Foro TV" tvg-logo="https://i.imgur.com/y6HiC4W.png" aspect-ratio="16:9" type="stream", FOROtv
-#EXTBG: #3e95ff
-https://d2416wdkjdz9sf.cloudfront.net/forotv/forotvm_1280x720_2500k.m3u8

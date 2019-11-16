@@ -1,115 +1,94 @@
-const { Command, flags } = require('@oclif/command')
-const { promisify } = require('util')
-const { writeFile } = require('fs')
+const {Command} = require('@oclif/command')
+const {promisify} = require('util')
+const {writeFile, mkdir} = require('fs')
 const path = require('path')
-const { Channel } = require('../models')
-const { baseUrl, defaultOutput, defaultPath } = require('../config/exporter')
-const { countries } = require('countries-list')
+const {Channel} = require('../models')
+const {baseUrl, defaultPath} = require('../config/exporter')
+const {countries} = require('countries-list')
+const ejs = require('ejs')
 
 const writeFilePromise = promisify(writeFile)
+const mkdirPromise = promisify(mkdir)
 
 const getCountryCode = country =>
-  Object.keys(countries).filter(key => countries[key].name === country)
+  Object.keys(countries).find(key => countries[key].name === country)
 
-const createM3U8 = channels => {
-  let fileContent = '#EXTM3U\n'
-  for (let tv of channels) {
-    const tvgName = tv.tvgName ? `tvg-name="${tv.tvgName}" ` : ''
-    const aspectRatio = tv.aspectRatio
-      ? `aspect-ratio="${tv.aspectRatio}" `
-      : ''
+const fillCountryChannels = async ({country}) => {
+  const channels = await Channel.findAll({
+    order: [['country', 'ASC'], ['name', 'ASC']],
+    where: {country},
+  })
 
-    fileContent += `\n#EXTINF:-1 ${tvgName}tvg-logo="${
-      tv.tvgLogo
-    }" ${aspectRatio}type="stream", ${tv.name}`
-    fileContent += `\n#EXTBG: ${tv.color}`
-    fileContent += `\n${tv.streamUrl}\n`
+  const countryCode = getCountryCode(country)
+
+  return {
+    name: country,
+    code: countryCode,
+    channels,
   }
-  return fileContent
 }
 
-const createMasterM3U8 = dbCountries => {
-  let fileContent = '#EXTM3U\n'
-  for (let country of dbCountries) {
-    const countryCode = getCountryCode(country.country)
-    const flag = `https://www.countryflags.io/${countryCode}/flat/64.png`
+const getData = async () => {
+  const channels = await Channel.findAll({
+    order: [['continent', 'ASC'], ['country', 'ASC'], ['name', 'ASC']],
+  })
 
-    fileContent += `\n#EXTINF:0 type="playlist" tvg-logo="${flag}", ${
-      country.country
-    }`
-    fileContent += `\n${baseUrl}countries/${countryCode}.m3u8\n`
-  }
-  return fileContent
+  const countries = await Channel.findAll({
+    attributes: ['country', 'continent'],
+    group: ['country'],
+    order: [['country', 'ASC']],
+  })
+  const countryPromises = countries.map(c => fillCountryChannels(c))
+
+  const groupedChannels = await Promise.all(countryPromises)
+
+  return {channels, groupedChannels}
 }
 
-const createJson = channels => {
-  const parsed = channels.map(channel => ({
-    name: channel.name,
-    aspectRatio: channel.aspectRatio,
-    color: channel.color,
-    continent: channel.continent,
-    country: channel.country,
-    logo: channel.tvgLogo,
-    url: channel.streamUrl
-  }))
+const createCompleteM3u8 = async channels => {
+  const template = path.join(__dirname, '../templates/list.ejs')
+  const output = path.join(defaultPath, 'list.m3u8')
+  const renderedStr = await ejs.renderFile(template, {channels}, {async: true})
+  await writeFilePromise(output, renderedStr)
+}
 
-  return JSON.stringify(parsed, null, 2)
+const createGroupedM3u8 = async groupedChannels => {
+  const masterTemplate = path.join(__dirname, '../templates/grouped.ejs')
+  const template = path.join(__dirname, '../templates/list.ejs')
+
+  // Create the master playlist.
+  const masterOutput = path.join(defaultPath, 'grouped.m3u8')
+  const renderedStr = await ejs.renderFile(
+    masterTemplate,
+    {countries: groupedChannels, baseUrl},
+    {async: true}
+  )
+  await writeFilePromise(masterOutput, renderedStr)
+  // Create the output folder.
+  await mkdirPromise(path.join(defaultPath, 'countries'))
+  // Create the individual playlists.
+  for (const country of groupedChannels) {
+    const output = path.join(defaultPath, 'countries', `${country.code}.m3u8`)
+    /* eslint-disable no-await-in-loop */
+    const list = await ejs.renderFile(template, {channels: country.channels}, {async: true})
+    await writeFilePromise(output, list)
+  }
 }
 
 class ExportCommand extends Command {
   async run() {
-    const { flags } = this.parse(ExportCommand)
-    const output = defaultOutput + (flags.json ? '.json' : '.m3u8')
-
-    if (flags.json) {
-      const channels = await Channel.findAll({
-        order: [['continent', 'ASC'], ['country', 'ASC'], ['name', 'ASC']]
-      })
-
-      await writeFilePromise(output, createJson(channels))
-
-      this.log(`Exported list with success in ${output}`)
-      return
+    try {
+      const {channels, groupedChannels} = await getData()
+      await createCompleteM3u8(channels)
+      await createGroupedM3u8(groupedChannels)
+    } catch (error) {
+      this.error(error)
     }
 
-    const dbCountries = await Channel.findAll({
-      attributes: ['country', 'continent'],
-      group: ['country'],
-      order: [['country', 'ASC']]
-    })
-
-    for (let country of dbCountries) {
-      /* eslint-disable no-await-in-loop */
-      const countryChannels = await Channel.findAll({
-        order: [['country', 'ASC'], ['name', 'ASC']],
-        where: {
-          country: country.country
-        }
-      })
-
-      const countryCode = getCountryCode(country.country)
-
-      const fileContent = createM3U8(countryChannels)
-      const fileName = path.join(
-        defaultPath,
-        'countries',
-        countryCode[0] + '.m3u8'
-      )
-
-      await writeFilePromise(fileName, fileContent)
-    }
-
-    const fileContent = createMasterM3U8(dbCountries)
-
-    await writeFilePromise(output, fileContent)
-    this.log(`Exported list with success in ${output}`)
+    this.log('Exported list with success.')
   }
 }
 
 ExportCommand.description = 'Export the database channels to a M3U8 file.'
-
-ExportCommand.flags = {
-  json: flags.boolean({ char: 'j', description: 'exports in json format' })
-}
 
 module.exports = ExportCommand
