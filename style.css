@@ -10,4 +10,56 @@
   .markdown-body {
     padding: 15px;
   }
+
+  .channel-group .channel {
+    width: calc(25% - 1em) !important;
+  }
+}
+
+h3 img {
+  vertical-align: baseline;
+}
+
+.channel-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0 !important;
+}
+
+.channel-group .channel {
+  width: calc(12.5% - 1em);
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  border-radius: 3px;
+  margin: 0.5em;
+  overflow: hidden;
+  transition: box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
+  will-change: box-shadow;
+}
+
+.channel-group .channel:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0,.16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+.channel .channel-image {
+  width: 100%;
+  padding-top: 65%;
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .2), rgba(255, 255, 255, .4)),
+    linear-gradient(currentColor 0%, currentColor 100%);
+}
+
+.channel .channel-image img {
+  background-color: transparent !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: calc(100% - 1em);
+  height: calc(100% - 1em);
+  transform: translate(-50%, -50%);
+  object-fit: contain;
 }
