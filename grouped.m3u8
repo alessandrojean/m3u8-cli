@@ -1,0 +1,56 @@
+#EXTM3U
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/BR/flat/64.png", Brazil
+https://alessandrojean.github.io/m3u8-cli/countries/BR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CN/flat/64.png", China
+https://alessandrojean.github.io/m3u8-cli/countries/CN.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/CO/flat/64.png", Colombia
+https://alessandrojean.github.io/m3u8-cli/countries/CO.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/FR/flat/64.png", France
+https://alessandrojean.github.io/m3u8-cli/countries/FR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/DE/flat/64.png", Germany
+https://alessandrojean.github.io/m3u8-cli/countries/DE.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/IR/flat/64.png", Iran
+https://alessandrojean.github.io/m3u8-cli/countries/IR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/IT/flat/64.png", Italy
+https://alessandrojean.github.io/m3u8-cli/countries/IT.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/JP/flat/64.png", Japan
+https://alessandrojean.github.io/m3u8-cli/countries/JP.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/MX/flat/64.png", Mexico
+https://alessandrojean.github.io/m3u8-cli/countries/MX.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KP/flat/64.png", North Korea
+https://alessandrojean.github.io/m3u8-cli/countries/KP.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/PT/flat/64.png", Portugal
+https://alessandrojean.github.io/m3u8-cli/countries/PT.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/RU/flat/64.png", Russia
+https://alessandrojean.github.io/m3u8-cli/countries/RU.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/KR/flat/64.png", South Korea
+https://alessandrojean.github.io/m3u8-cli/countries/KR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/ES/flat/64.png", Spain
+https://alessandrojean.github.io/m3u8-cli/countries/ES.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/TR/flat/64.png", Turkey
+https://alessandrojean.github.io/m3u8-cli/countries/TR.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/AE/flat/64.png", United Arab Emirates
+https://alessandrojean.github.io/m3u8-cli/countries/AE.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/US/flat/64.png", United States
+https://alessandrojean.github.io/m3u8-cli/countries/US.m3u8
+
+#EXTINF:0 type="playlist" tvg-logo="https://www.countryflags.io/VE/flat/64.png", Venezuela
+https://alessandrojean.github.io/m3u8-cli/countries/VE.m3u8
+
