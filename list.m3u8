@@ -278,7 +278,7 @@ https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_4.m3u8
 
 #EXTINF:-1 tvg-name="Foro TV" tvg-logo="https://i.imgur.com/y6HiC4W.png" aspect-ratio="16:9" type="stream", FOROtv
 #EXTBG: #3e95ff
-https://d2416wdkjdz9sf.cloudfront.net/forotv/forotvm_1280x720_2500k.m3u8
+https://stnothds-lh.akamaihd.net/i/sslf0r0tvnus_1@109755/index_1296_av-p.m3u8?sd=10&amp;rebase=on
 
 #EXTINF:-1 tvg-name="ABC News" tvg-logo="https://i.imgur.com/2Eucr7j.png" aspect-ratio="16:9" type="stream", ABC News
 #EXTBG: #000000
@@ -306,7 +306,7 @@ https://d2klx6wjx7p5vm.cloudfront.net/Rooster-teeth/ngrp:Rooster-teeth_all/playl
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Uuty5zp.png" aspect-ratio="16:9" type="stream", CBTV
 #EXTBG: #111111
-https://sa-all13.secdn.net/cbtv-channel/play/mp4:stream/chunklist_w1662090379.m3u8
+https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp1/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/8b8ughV.png" aspect-ratio="16:9" type="stream", CNN Brasil
 #EXTBG: #cc0000

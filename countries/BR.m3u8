@@ -2,7 +2,7 @@
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Uuty5zp.png" aspect-ratio="16:9" type="stream", CBTV
 #EXTBG: #111111
-https://sa-all13.secdn.net/cbtv-channel/play/mp4:stream/chunklist_w1662090379.m3u8
+https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp1/chunks.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/8b8ughV.png" aspect-ratio="16:9" type="stream", CNN Brasil
 #EXTBG: #cc0000
