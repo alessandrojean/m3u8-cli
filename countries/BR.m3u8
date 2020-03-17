@@ -4,7 +4,7 @@
 #EXTBG: #111111
 https://sa-all13.secdn.net/cbtv-channel/play/mp4:stream/chunklist_w1662090379.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", CNN Brasil
+#EXTINF:-1 tvg-logo="https://i.imgur.com/8b8ughV.png" aspect-ratio="16:9" type="stream", CNN Brasil
 #EXTBG: #cc0000
 https://streaming.cnnbrasil.com.br/cnndigital_mainOutput2.m3u8
 

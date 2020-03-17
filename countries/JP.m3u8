@@ -4,10 +4,6 @@
 #EXTBG: #1a2c60
 https://www.youtube.com/watch?v=coYw-eVU0Ks
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", NHK Huayu Shijie
-#EXTBG: #323838
-https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
-
 #EXTINF:-1 tvg-name="NHK World" tvg-logo="https://i.imgur.com/gsWnza2.png" aspect-ratio="16:9" type="stream", NHK World Japan
 #EXTBG: #323838
 https://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp/index_1M.m3u8

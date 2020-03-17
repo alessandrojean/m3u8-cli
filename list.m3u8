@@ -88,10 +88,6 @@ https://live2.presstv.com/liveprs/smil:liveprs.smil/playlist.m3u8
 #EXTBG: #1a2c60
 https://www.youtube.com/watch?v=coYw-eVU0Ks
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", NHK Huayu Shijie
-#EXTBG: #323838
-https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
-
 #EXTINF:-1 tvg-name="NHK World" tvg-logo="https://i.imgur.com/gsWnza2.png" aspect-ratio="16:9" type="stream", NHK World Japan
 #EXTBG: #323838
 https://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp/index_1M.m3u8
@@ -172,8 +168,8 @@ https://english.streaming.aljazeera.net/aljazeera/english2/index4147.m3u8
 #EXTBG: #00a7e3
 http://f24hls-i.akamaihd.net/hls/live/221193/F24_EN_LO_HLS/master_900.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", TV5 Monde
-#EXTBG: #000000
+#EXTINF:-1 tvg-logo="https://i.imgur.com/la0N5Ns.png" aspect-ratio="16:9" type="stream", TV5 Monde
+#EXTBG: #00abe9
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/index.m3u8
 
 #EXTINF:-1 tvg-name="DWTV" tvg-logo="https://i.imgur.com/ol2OStx.png" aspect-ratio="16:9" type="stream", DW
@@ -212,24 +208,24 @@ http://b2everyrai-lh.akamaihd.net/i/raipremium_1@181837/index_1800_av-p.m3u8?sd=
 #EXTBG: #009933
 http://b2everyrai-lh.akamaihd.net/i/raiyoyo_1@191405/master.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", RTP 1
-#EXTBG: #000000
+#EXTINF:-1 tvg-logo="https://i.imgur.com/e7uUaVQ.png" aspect-ratio="16:9" type="stream", RTP 1
+#EXTBG: #0074ff
 http://streaming-live-app.rtp.pt/liverepeater/smil:rtp1HD.smil/chunklist_b2540000_slpor.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", RTP 2
-#EXTBG: #000000
+#EXTINF:-1 tvg-logo="https://i.imgur.com/JrB7Z3L.png" aspect-ratio="16:9" type="stream", RTP 2
+#EXTBG: #ffdb00
 http://streaming-live-app.rtp.pt/liverepeater/smil:rtp2.smil/chunklist_b1290000_slpt.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", RTP 3
-#EXTBG: #000000
+#EXTINF:-1 tvg-logo="https://i.imgur.com/ruNv4O3.png" aspect-ratio="16:9" type="stream", RTP 3
+#EXTBG: #0037e6
 http://streaming-live-app.rtp.pt/liverepeater/smil:rtpn.smil/chunklist_b1290000_slpt.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", TVI
-#EXTBG: #000000
+#EXTINF:-1 tvg-logo="https://i.imgur.com/yQWDEQz.png" aspect-ratio="16:9" type="stream", TVI
+#EXTBG: #222222
 http://video-auth7.iol.pt/live_tvi/live_tvi/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", TVI 24
-#EXTBG: #000000
+#EXTINF:-1 tvg-logo="https://i.imgur.com/jM0NiwC.png" aspect-ratio="16:9" type="stream", TVI 24
+#EXTBG: #222222
 http://video-auth7.iol.pt/live_tvi24/live_tvi24/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/wAYDCDO.png" aspect-ratio="16:9" type="stream", RT Documentary
@@ -312,7 +308,7 @@ https://d2klx6wjx7p5vm.cloudfront.net/Rooster-teeth/ngrp:Rooster-teeth_all/playl
 #EXTBG: #111111
 https://sa-all13.secdn.net/cbtv-channel/play/mp4:stream/chunklist_w1662090379.m3u8
 
-#EXTINF:-1 tvg-logo="" aspect-ratio="16:9" type="stream", CNN Brasil
+#EXTINF:-1 tvg-logo="https://i.imgur.com/8b8ughV.png" aspect-ratio="16:9" type="stream", CNN Brasil
 #EXTBG: #cc0000
 https://streaming.cnnbrasil.com.br/cnndigital_mainOutput2.m3u8
 
